@@ -353,7 +353,7 @@ button {
         padding: 0 var(--spacing-md);
     }
     .logo-image {
-        height: 45px; /* Adjust logo size for mobile */
+        height: 70px; /* Adjust logo size for mobile */
     }
     .mobile-menu-button {
         font-size: 1.8rem;
@@ -370,7 +370,7 @@ button {
 /* Small Mobile Devices (max-width: 480px) */
 @media (max-width: 480px) {
     .logo-image {
-        height: 40px; /* Adjust logo size for small mobile */
+        height: 60px; /* Adjust logo size for small mobile */
     }
     .mobile-menu-button {
         font-size: 1.6rem;
@@ -529,10 +529,10 @@ button {
         height: 60px;
     }
     .logo-image {
-        height: 45px; /* Adjusted for tablets */
+        height: 90px; /* Adjusted for tablets */
     }
     .mobile-menu-button {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
     }
     .mobile-panel {
         padding-top: 60px;
@@ -549,7 +549,7 @@ button {
 @media (max-width: 400px) {
     /* Styles for very small phones */
     .logo-image {
-        height: 30px; /* Adjusted for small phones */
+        height: 80px; /* Adjusted for small phones */
     }
     .mobile-panel a,
     .submenu > p {
