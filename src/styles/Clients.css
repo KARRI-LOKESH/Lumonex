@@ -1,0 +1,64 @@
+.clients-section {
+  padding: 60px 20px;
+  background: #f9fafb;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.clients-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 40px;
+}
+
+.logo-carousel-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.logo-carousel {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
+
+.client-item {
+  min-width: 200px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.client-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.client-name {
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 600;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .client-logo {
+    width: 90px;
+    height: 90px;
+  }
+  .client-item {
+    min-width: 150px;
+  }
+}

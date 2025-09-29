@@ -1,0 +1,109 @@
+/* ==========================================================================
+   PROJECTS.CSS - External Stylesheet for the Projects Component
+   ========================================================================== */
+
+/* ===== 1. Section and Heading Styles ===== */
+.projects-section {
+  padding: 3.5rem 1.5rem;
+  background: linear-gradient(135deg, #f9fafb, #eef2ff);
+  font-family: "Poppins", Arial, sans-serif;
+  text-align: center;
+}
+
+.projects-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 2.5rem;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+.projects-heading::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  margin: 0.6rem auto 0;
+  border-radius: 3px;
+}
+
+/* ===== 2. Projects Grid & Card Styles ===== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.08);
+}
+
+/* ===== 3. Project Title Styles ===== */
+.project-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #374151;
+  padding: 0.8rem;
+  text-align: center;
+  background: #f9fafb;
+  width: 100%;
+  border-top: 1px solid #e5e7eb;
+  transition: color 0.3s ease;
+}
+
+.project-card:hover .project-title {
+  color: #2563eb;
+}
+
+/* ===== 4. Responsive ===== */
+@media (max-width: 768px) {
+  .projects-heading {
+    font-size: 2rem;
+  }
+  .project-image {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-section {
+    padding: 2.5rem 1rem;
+  }
+  .projects-heading {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  .project-image {
+    height: 130px;
+  }
+}

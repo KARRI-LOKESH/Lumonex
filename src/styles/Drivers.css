@@ -1,0 +1,99 @@
+/* General page container */
+.product-page {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Page title */
+.product-title-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Main category image */
+.product-main-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Main description below banner */
+.product-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 0 auto 40px;
+  max-width: 850px;
+  color: #555;
+}
+
+/* Grid for driver cards */
+.product-sub-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 25px;
+}
+
+/* Each card */
+.product-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+}
+
+/* Card image */
+.product-image {
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+/* Card title */
+.product-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* Card description */
+.product-description-card {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+/* Button */
+.product-button {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #004aad;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.product-button:hover {
+  background: #0066e7;
+}

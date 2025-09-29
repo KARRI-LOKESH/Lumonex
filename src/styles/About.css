@@ -1,0 +1,308 @@
+/* ==========================================================================
+   ABOUT.CSS - External Stylesheet for the About Component
+   ========================================================================== */
+
+/* ===== 1. Utility & Base Styles ===== */
+:root {
+  --primary-color: #1e3a8a;
+  --secondary-color: #7c3aed;
+  --text-color: #4b5563;
+  --heading-color: #1a202c;
+  --bg-light: #f9fafb;
+  --bg-white: #ffffff;
+  --border-color: #e5e7eb;
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --transition-speed: 0.3s;
+  --container-max-width: 1300px;
+}
+
+.about-us-section {
+  padding: 3rem 1rem;
+  background-color: var(--bg-light);
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 3rem auto;
+  max-width: 90%;
+}
+
+/* ===== 2. Hero Section ===== */
+.about-hero {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.about-hero-text {
+  text-align: center;
+  animation: fadeInLeft 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+.about-hero-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  line-height: 1.2;
+}
+
+.about-hero-subtitle {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  color: var(--text-color);
+}
+
+.about-hero-image-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  animation: fadeInRight 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+.about-hero-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-lg);
+  transform: scale(1);
+  transition: transform var(--transition-speed) ease-in-out;
+}
+
+.about-hero-image:hover {
+  transform: scale(1.02);
+}
+
+/* ===== 3. Mission & Vision Section ===== */
+.mission-vision-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.mission-card,
+.vision-card {
+  background-color: var(--bg-white);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-md);
+  border-top: 4px solid;
+  transition: transform var(--transition-speed) ease-in-out;
+  transform: translateY(0);
+}
+
+.mission-card {
+  border-color: var(--primary-color);
+  animation: slideUp 0.8s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+.vision-card {
+  border-color: var(--secondary-color);
+  animation: slideUp 0.8s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.4s;
+}
+
+.mission-card:hover,
+.vision-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.card-text {
+  margin-top: 1rem;
+  line-height: 1.75;
+}
+
+/* ===== 4. Why Choose Us Section ===== */
+.why-us-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.why-us-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.benefit-item {
+  background-color: var(--bg-white);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-md);
+  transform: scale(1);
+  transition: transform var(--transition-speed) ease-in-out;
+  animation: slideUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.benefits-grid .benefit-item:nth-child(1) { animation-delay: 0.6s; }
+.benefits-grid .benefit-item:nth-child(2) { animation-delay: 0.8s; }
+.benefits-grid .benefit-item:nth-child(3) { animation-delay: 1s; }
+
+.benefit-item:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-lg);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.benefit-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.benefit-text {
+  margin-top: 0.5rem;
+}
+
+/* ===== 5. Team Section ===== */
+.team-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  animation: slideUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.team-grid .team-member:nth-child(1) { animation-delay: 1.2s; }
+.team-grid .team-member:nth-child(2) { animation-delay: 1.4s; }
+.team-grid .team-member:nth-child(3) { animation-delay: 1.6s; }
+.team-grid .team-member:nth-child(4) { animation-delay: 1.8s; }
+
+
+.team-member-photo {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary-color);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-speed) ease-in-out;
+}
+
+.team-member-photo:hover {
+  transform: scale(1.05);
+}
+
+.team-member-name {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.team-member-role {
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+/* ===== 6. Animations (Keyframes) ===== */
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== 7. Responsive Design (Media Queries) ===== */
+@media (min-width: 768px) {
+  .about-hero {
+    flex-direction: row;
+    text-align: left;
+  }
+  .about-hero-text {
+    padding-right: 2.5rem;
+    text-align: left;
+  }
+  .about-hero-image-container {
+    margin-top: 0;
+    max-width: 50%;
+  }
+  .about-hero-title {
+    font-size: 3rem;
+  }
+  .mission-vision-container {
+    flex-direction: row;
+  }
+  .benefits-grid, .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-us-section {
+    padding: 5rem 2rem;
+  }
+  .about-hero-title {
+    font-size: 3.5rem;
+  }
+  .benefits-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

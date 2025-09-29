@@ -1,0 +1,107 @@
+/* ==========================================================================
+   SECTORS.CSS - External Stylesheet for the Sectors Component
+   ========================================================================== */
+
+/* ===== Base Styles (Default for all screens) ===== */
+.sectors-section {
+  padding: 3rem 1rem;
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.sectors-heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.sectors-heading::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 4px;
+  background: linear-gradient(90deg, #1e3a8a, #7c3aed);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Default grid for mobile: 1 column */
+.sectors-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* This is the key line for mobile */
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.sector-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.sector-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.sector-image {
+  height: 8rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  filter: grayscale(80%);
+  transition: filter 0.5s ease-in-out;
+}
+
+.sector-card:hover .sector-image {
+  filter: grayscale(0%);
+}
+
+.sector-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-top: 0.75rem;
+}
+
+.sector-description {
+  color: #4b5563;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+/* ===== Responsive Design (Media Queries) ===== */
+/* Tablets (2 columns) */
+@media (min-width: 768px) {
+  .sectors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktops (4 columns) */
+@media (min-width: 1024px) {
+  .sectors-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .sectors-section {
+    padding: 2rem 0.5rem;
+  }
+  .sectors-heading {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+}

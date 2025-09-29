@@ -1,0 +1,64 @@
+/* ==========================================================================
+   FOOTER.CSS - External Stylesheet for the Footer Component
+   ========================================================================== */
+
+/* ===== 1. Footer Container Styles ===== */
+.footer-container {
+  background-color: #1a202c; /* Equivalent to bg-gray-900 */
+  color: #ffffff;
+  padding: 1.5rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== 2. Typography and Links ===== */
+.copyright-text {
+  font-size: 0.875rem; /* Small text for copyright */
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
+
+.social-links {
+  font-size: 0.875rem;
+}
+
+.social-links span {
+  margin-right: 0.5rem;
+}
+
+.social-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  margin: 0 0.5rem;
+}
+
+.social-link:hover {
+  text-decoration: underline;
+}
+
+/* Specific link colors on hover */
+.social-link.facebook:hover {
+  color: #4267b2;
+}
+
+.social-link.twitter:hover {
+  color: #1da1f2;
+}
+
+.social-link.instagram:hover {
+  color: #e1306c;
+}
+
+/* Example of adding an image or icon to the footer */
+/*
+.footer-logo {
+  height: 30px;
+  margin-bottom: 1rem;
+}
+*/
