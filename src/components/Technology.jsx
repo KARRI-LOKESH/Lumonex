@@ -61,10 +61,10 @@ const Technology = () => {
   return (
     <section id="technology" className="technology-section">
       <h2 className="technology-heading">
-        TECHNOLOGY <span className="highlight">FOR</span> PEOPLE
+        HUMAN-<span className="highlight">CENTRIC</span> TECNOLOGY
       </h2>
       <p className="technology-description">
-        Lumonex Technologies Pvt. Ltd. is an Indian fast-growing company, specializing in Green Energy Products, headquartered in Bangalore, India.
+        Lumonex Technologies Pvt. Ltd. is an Indian fast-growing company, specializing in Green Energy Products, headquartered in Hyderabad, India.
       </p>
 
       <div className="technology-grid">

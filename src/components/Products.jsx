@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import "../styles/Products.css";
 import ledImg from "../assets/products/ledimg1.jpg";
-import smartImg from "../assets/products/smartimg.jpg";
-import industrialImg from "../assets/products/industrialimg.jpg";
+import poles from "../assets/products/poles.jpg";
+import drivers from "../assets/products/drivers.jpg";
 
 const productsData = [
   { 
@@ -13,13 +13,13 @@ const productsData = [
   },
   { 
     id: "poles", // Changed from "smart-lighting" to "poles"
-    img: smartImg, 
+    img: poles, 
     title: "POLES", 
     desc: "Durable lighting poles and masts designed for outdoor installations." 
   },
   { 
     id: "drivers", // Changed from "industrial-lights" to "drivers"
-    img: industrialImg, 
+    img: drivers, 
     title: "DRIVERS", 
     desc: "High-performance power supplies for LED systems and fixtures." 
   },

@@ -115,7 +115,7 @@ function About() {
               alt="Team Member Alex Johnson" 
               className="team-member-photo" 
             />
-            <h4 className="team-member-name">Alex Johnson</h4>
+            <h4 className="team-member-name">KS REDDY</h4>
             <p className="team-member-role">Marketing Director</p>
           </div>
         </div>

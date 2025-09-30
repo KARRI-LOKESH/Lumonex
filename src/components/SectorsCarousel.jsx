@@ -9,12 +9,12 @@ import industrialImg from "../assets/sectorscar/industrialimg.jpg";
 import outdoorImg from "../assets/sectorscar/outlight.webp";
 import smartImg from "../assets/sectorscar/autolight.webp";
 import ledTechImg from "../assets/products/ledimg1.jpg";
-import energyImg from "../assets/sectorscar/landlight.jpg"; 
-import retailImg from "../assets/sectorscar/decorlight.webp";
-import hospitalityImg from "../assets/sectorscar/theatre.jpeg";
-import healthcareImg from "../assets/sectorscar/arclight.png";
-import turfImg from "../assets/sectorscar/stadlight.jpg";
-import shuttleImg from "../assets/sectorscar/comlight.jpg"; // Using a placeholder for now
+import energyImg from "../assets/sectorscar/enerlight.jpg"; 
+import retailImg from "../assets/sectorscar/retlight.webp";
+import hospitalityImg from "../assets/sectorscar/hoslight.webp";
+import healthcareImg from "../assets/sectorscar/hellight.webp";
+import turfImg from "../assets/sectorscar/turflight.jpg";
+import shuttleImg from "../assets/sectorscar/shuttle.jpg"; // Using a placeholder for now
 import stadiumImg from "../assets/sectorscar/stadlight.jpg";
 
 const sectorsData = [
